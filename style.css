@@ -279,10 +279,10 @@ section {
   width: 15px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
+  background-color: #584e48be;
 }
 ::-webkit-scrollbar-track {
-  background-color: var(--bg-color);
+  background-color: #dedcdb62;
   width: 50px;
 }
 .about {
@@ -335,7 +335,7 @@ section {
   margin-bottom: 5rem;
 }
 .timeline-items {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -655,11 +655,11 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 .service-box {
   background-color: var(--bg-color);
-  height: 300px;
+  height: 320px;
   border-radius: 3rem;
   border: 0.2rem solid var(--text-color);
   cursor: pointer;
@@ -683,14 +683,14 @@ section {
   padding: 5rem 5rem;
 }
 .service-info h4 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
   line-height: 2;
 }
 .service-info p {
   font-size: 1.6rem;
   font-weight: 600;
-  max-height: 100px;
+  max-height: 120px;
   line-height: 1.7;
   margin: auto;
 }
@@ -809,6 +809,22 @@ section {
   section {
     padding: 10rem 3% 2rem;
   }
+  .about {
+    padding: 10rem 3% 2rem;
+  }
+  .about-text h2 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .about-img img {
+    width: 32vw;
+    margin-left: 3rem;
+    margin-top: 2rem;
+  }
+  .about-text p {
+    font-size: 2rem;
+    word-wrap: normal;
+  }
   .timeline-items::before {
     left: 7px;
   }
@@ -859,15 +875,15 @@ section {
     margin: 3rem 0;
     color: var(--text-color);
   }
-  .home{
+  .home {
     flex-direction: column-reverse;
     margin: 5rem 4rem;
   }
   .home-content h3 {
     font-size: 2.6rem;
   }
-  .home-content h1{
-    font-size: 8rem;
+  .home-content h1 {
+    font-size: 6rem;
     margin-top: 3rem;
   }
   .home-content p {
@@ -877,10 +893,19 @@ section {
   .home-img img {
     width: 56vw;
   }
+  .skills {
+    flex-direction: column;
+  }
   .services h2 {
     margin-bottom: 3rem;
   }
   .services-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .service-info h4 {
+    font-size: 2.3rem;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
   }
 }
